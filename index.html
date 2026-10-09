@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戎　サイト</title>
+    <link rel="stylesheet" href="styl.css">
+    <script>
+        let jikan = new Date();
+        let hour = jikan.getHours();
+        let minute = jikan.getMinutes();
+        let secound = jikan.getSeconds();
+        let year = jikan.getFullYear(); - 2018
+        let month = jikan.getMonth();
+        let date = jikan.getDate();
+        let weekday = jikan.getDay();
+        
+        window.alert("ようこそ！現在は" + hour + "時" + minute + "分" + secound + "秒です。");
+        if(weekday == 4){
+            window.alert("今日は木曜日です");
+        } else{
+            window.alert("今日は木曜日ではありません");
+        }
+        window.alert("今日は" + year + "年" + month + "月" + date + "日です。")
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h1>戎</h1>
+    </div>
+    <div id="main">
+        <h2>見出し1</h2>
+        <P>ここに文章が入ります。</P>
+        <h2>見出し2</h2>
+        <p>ここに文章が入ります。</p>
+    </div>
+    <div id="footer">
+        <P>copyright (C) 2026 himeka ebisu.ALL right reserved.</P>
+    </div>
+</body>
+</html>
